@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'lato': ['Lato', 'sans-serif']
+        'lato': ['EB Garamond', 'sans-serif']
       },
       spacing: {
         '128': '32rem',
@@ -15,6 +15,10 @@ export default {
       backgroundColor: {
         'darkblue': '#1f3044',
         'light': '#f5f7ed',
+      },
+      colors: {
+        'beige': '#b89d72',
+        'darkblue': '#1f3044'
       }
     },
   },

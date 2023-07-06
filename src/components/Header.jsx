@@ -1,4 +1,4 @@
-import Bgimage from '../assets/lawer.jpg'
+import Bgimage from '../assets/contact-bg.jpg'
 import Logo from '../assets/logo.png'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { Link } from 'react-router-dom'
@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
-        <header className="w-full mb-128 text-white">
+        <header className="w-full bg-darkblue text-white">
 
             <div className='w-full h-20 flex justify-around items-center max-md:justify-between bg-opacity-100 shadow-sm'>
                 <Link to="/" className='h-full'><img className='h-full py-3 max-md:ml-4 brightness-150' src={Logo} alt="Logo" /></Link>
@@ -25,7 +25,9 @@ const Header = () => {
                 </div>
 
             </div>
-            <img src={Bgimage} alt='' className='fixed left-0 top-0 h-screen w-full object-cover -z-10 overflow-hidden brightness-50' />
+            <div>
+                <img src={Bgimage} alt="" />
+            </div>
         </header>
     )
 }

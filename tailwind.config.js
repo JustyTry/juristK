@@ -19,6 +19,9 @@ export default {
       colors: {
         'beige': '#b89d72',
         'darkblue': '#1f3044'
+      },
+      width: {
+        '30%': '30%',
       }
     },
   },

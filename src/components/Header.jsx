@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
-        <header className="w-full bg-darkblue text-white">
+        <header className="w-full   text-darkblue">
 
-            <div className='w-full h-20 flex justify-around items-center max-md:justify-between bg-opacity-100 shadow-sm'>
+            <div className='w-full bg-light absolute bg-opacity-0 h-20 flex justify-around items-center max-md:justify-between shadow-sm'>
                 <Link to="/" className='h-full'><img className='h-full py-3 max-md:ml-4 brightness-150' src={Logo} alt="Logo" /></Link>
                 <nav className='max-md:hidden'>
                     <ul className="text-lg flex gap-10 ">

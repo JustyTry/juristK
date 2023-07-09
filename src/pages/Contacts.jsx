@@ -1,14 +1,14 @@
-import clockIcon from '../assets/clockIcon.png';
-import contactIcon from '../assets/contactIcon.png';
-import locationIcon from '../assets/locationIcon.png';
+import clockIcon from '/images/clockIcon.png';
+import contactIcon from '/images/contactIcon.png';
+import locationIcon from '/images/locationIcon.png';
 import ContactForm from '../components/ContactForm';
-import vkIcon from '../assets/vkIcon.png'
-import instaIcon from '../assets/instIcon.png'
-import waIcon from '../assets/waIcon.png'
+import vkIcon from '/images/vkIcon.png'
+import instaIcon from '/images/instIcon.png'
+import waIcon from '/images/waIcon.png'
 
 const Contacts = () => {
     return (
-        <div className=" bg-white ">
+        <div className=" bg-light ">
             <div className="w-full flex items-center flex-col ">
                 <h1 className=" text-4xl text-center mt-8 w-8/12 max-md:w-full">
                     Мы расположены в Красноярске, Копылова 66
@@ -50,13 +50,8 @@ const Contacts = () => {
                         </li>
                     </ul>
                 </div>
-                <div className='relative w-full'>
-
-                    <iframe
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A6529b819bb76ed533b5f0284c9b21b934b28507b3cde31c12fa0fdc5632af94e&amp;source=constructor"
-                        className="w-full mt-8 h-128"
-                    ></iframe>
-                    <div className=' absolute right-16 top-0 w-4/12 max-md:w-6/12 max-sm:w-full max-sm:static'>
+                <div className='relative w-8/12 max-lg:w-full'>
+                    <div className=' right-16 top-0 w-full max-md:w-6/12 max-sm:w-full max-sm:static'>
                         <ContactForm />
                     </div>
                 </div>

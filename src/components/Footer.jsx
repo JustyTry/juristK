@@ -1,6 +1,6 @@
-import VkIcon from "../assets/vkIcon.png"
-import InstaIcon from "../assets/instIcon.png"
-import WaIcon from "../assets/waIcon.png"
+import VkIcon from "/images/vkIcon.png"
+import InstaIcon from "/images/instIcon.png"
+import WaIcon from "/images/waIcon.png"
 const Footer = () => {
     const currentYear = new Date().getFullYear()
     return (

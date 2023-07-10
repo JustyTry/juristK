@@ -11,7 +11,9 @@ const Service = () => {
 
 
     return (
-        <div>Service</div>
+        <div className="w-full bg-light" >
+            <div></div>
+        </div>
     )
 }
 

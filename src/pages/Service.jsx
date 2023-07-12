@@ -13,6 +13,7 @@ const Service = () => {
     return (
         <div className="w-full bg-light" >
             <div>
+                <h2></h2>
             <div></div>
             </div>
         </div>

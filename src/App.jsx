@@ -8,6 +8,7 @@ import Contacts from "./pages/Contacts";
 import Footer from "./components/Footer";
 import Services from "./pages/Services";
 import AboutUs from "./pages/AboutUs";
+import Service from "./pages/Service";
 
 
 function App() {
@@ -32,6 +33,10 @@ function App() {
     {
       path: "/services",
       element: <Layout Page={Services} />,
+    },
+    {
+      path: "/service",
+      element: <Layout Page={Service} />,
     },
     {
       path: "/contacts",

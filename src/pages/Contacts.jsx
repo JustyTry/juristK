@@ -10,7 +10,7 @@ const Contacts = () => {
     return (
         <div className=" bg-light ">
             <div className="w-full flex items-center flex-col ">
-                <h1 className=" text-4xl text-center mt-8 w-8/12 max-md:w-full">
+                <h1 className=" text-4xl text-center mt-8 w-8/12 max-md:w-full text-darkblue">
                     Мы расположены в Красноярске, Копылова 66
                 </h1>
                 <h6 className=" text-lg text-gray-500  text-center mt-8 w-6/12 max-md:w-full">

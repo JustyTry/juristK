@@ -24,8 +24,8 @@ const Header = () => {
                 </div>
 
             </div>
-            <div>
-                <img src={Bgimage} alt="" className=' select-none pointer-events-none' />
+            <div className='w-full'>
+                <img src="https://images.unsplash.com/photo-1437751068958-82e6fccc9360?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" className='w-full select-none pointer-events-none' />
             </div>
         </header>
     )

@@ -35,7 +35,7 @@ function App() {
       element: <Layout Page={Services} />,
     },
     {
-      path: "/service",
+      path: "/service/:name",
       element: <Layout Page={Service} />,
     },
     {

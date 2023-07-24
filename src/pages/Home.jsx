@@ -77,12 +77,12 @@ const Home = () => {
                     </h2>
                     <div className="w-full flex justify-between max-md:justify-around gap-y-12 max-sm:flex-col flex-wrap">
 
-                        <Record image="https://obrazovaka.ru/wp-content/uploads/2018/07/nalogovoe-pravo-e1530494918344.jpg" title="Налоговое право" />
-                        <Record image="https://a7j7v6j6.rocketcdn.me/wp-content/uploads/2021/06/employment-law.jpg" title="Трудовое право" />
-                        <Record image="https://www.advgazeta.ru/upload/iblock/1db/semeynoe_pravo_vzglyad_tsivilista_1.jpg" title="Семейное право" />
-                        <Record image="https://prs.company/wp-content/uploads/2020/05/gr_pr.jpg" title="Гражданское право" />
-                        <Record image="https://myhouse777.ru/wp-content/uploads/2022/03/orig.jpg" title="Арбитраж" />
-                        <Record image="https://s0.rbk.ru/v6_top_pics/media/img/8/26/756358979194268.jpg" title="Недвижимость" />
+                        <Record image="https://obrazovaka.ru/wp-content/uploads/2018/07/nalogovoe-pravo-e1530494918344.jpg" title="Налоговое право" link="tax" />
+                        <Record image="https://a7j7v6j6.rocketcdn.me/wp-content/uploads/2021/06/employment-law.jpg" title="Трудовое право" link="labor" />
+                        <Record image="https://www.advgazeta.ru/upload/iblock/1db/semeynoe_pravo_vzglyad_tsivilista_1.jpg" title="Семейное право" link="family" />
+                        <Record image="https://prs.company/wp-content/uploads/2020/05/gr_pr.jpg" title="Гражданское право" link="citizen" />
+                        <Record image="https://myhouse777.ru/wp-content/uploads/2022/03/orig.jpg" title="Арбитраж" link="arbitration" />
+                        <Record image="https://s0.rbk.ru/v6_top_pics/media/img/8/26/756358979194268.jpg" title="Недвижимость" link="realestate" />
 
 
                     </div>

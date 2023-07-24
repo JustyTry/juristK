@@ -1,4 +1,3 @@
-import Bgimage from '/images/contact-bg.jpg'
 import Logo from '/images/logo.png'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { Link } from 'react-router-dom'
@@ -6,12 +5,12 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
-        <header className="w-full text-darkblue flex justify-center">
-            <div className='w-8/12 max-lg:w-full absolute h-20 flex justify-around items-center max-md:justify-between'>
-                <Link to="/" className='h-full w-3/12'><img className='h-full py-3 max-md:ml-4 brightness-150' src={Logo} alt="Logo" /></Link>
+        <header className="w-full text-darkblue flex justify-center bg-light">
+            <div className='w-8/12 max-lg:w-full absolute h-20 flex justify-around items-center max-md:justify-between '>
+                <Link to="/" className='h-full w-3/12 max-md:w-8/12'><img className='h-full py-3 max-md:ml-4' src={Logo} alt="Logo" /></Link>
                 <nav className='max-md:hidden w-6/12 flex justify-center'>
                     <ul className="text-xl flex gap-10">
-                        <li><Link to="/about">О нас</Link></li>
+                        <li><Link to="/about">Кто мы</Link></li>
                         <li><Link to="/services">Услуги</Link></li>
                         <li><Link to="/contacts">Контакты</Link></li>
                     </ul>
@@ -25,7 +24,7 @@ const Header = () => {
 
             </div>
             <div className='w-full'>
-                <img src="https://images.unsplash.com/photo-1437751068958-82e6fccc9360?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" className='w-full select-none pointer-events-none' />
+                <img src="https://images.unsplash.com/photo-1437751068958-82e6fccc9360?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" className='w-full select-none pointer-events-none opacity-0' />
             </div>
         </header>
     )

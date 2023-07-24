@@ -1,9 +1,12 @@
 import ContactForm from "../components/ContactForm";
 import services from "../services.json";
+import { useParams } from "react-router-dom";
 
 const Service = () => {
-    const title = services.services[0].name
-    const desc = services.services[0].description.split("\n").map((text, index) => <p className="mt-2" key={index}>{text}</p>)
+    const { name } = useParams();
+    const title = services[name].name
+    console.log(services[name])
+    const desc = services[name].description.split("\n").map((text, index) => <p className="mt-2" key={index}>{text}</p>)
     return (
         <div className="w-full bg-light flex items-center flex-col">
             <div className="w-8/12">

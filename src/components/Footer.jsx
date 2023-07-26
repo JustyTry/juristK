@@ -1,23 +1,24 @@
 import VkIcon from '/images/vkIcon.png';
 import InstaIcon from '/images/instIcon.png';
 import WaIcon from '/images/waIcon.png';
+import { Link } from 'react-router-dom';
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
         <div className="w-full min-h-32 flex justify-end items-center flex-col gap-2 bg-darkblue text-white border-t-gray-700 border-t-2">
-            <h6 className=" pt-4">Безвыходных ситуаций не бывает</h6>
+            <h6 className=" pt-4 text-xl">Безвыходных ситуаций не бывает</h6>
             <div className=" flex justify-start gap-10">
                 <div className='flex flex-col items-center text-center'>
                     <img src={VkIcon} alt="VK" />
-                    <div className="w-full mt-2">Услуги</div>
+                    <Link to="/services" className="w-full mt-2">Услуги</Link>
                 </div>
                 <div className='flex flex-col items-center text-center'>
                     <img src={InstaIcon} alt="Insta" />
-                    <div className="w-full mt-2">Кто мы</div>
+                    <Link to="/about" className="w-full mt-2">Кто мы</Link>
                 </div>
                 <div className='flex flex-col items-center text-center'>
                     <img src={WaIcon} alt="Insta" />
-                    <div className="w-full mt-2">Контакты</div>
+                    <Link to="/contacts" className="w-full mt-2">Контакты</Link>
                 </div>
             </div>
 

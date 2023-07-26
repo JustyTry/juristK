@@ -20,14 +20,14 @@ const ContactForm = () => {
             <div className="w-6/12 max-md:w-full">
                 <p className="mt-6">
                     Если у вас имеется какой-либо вопрос или проблема, вы можете связаться с нами. Мы
-                    ответим как можно скорей
+                    ответим как можно скорей.
                 </p>
                 <div>
                     <form
                         onSubmit={handleSubmit(onSubmit)}
                         className="flex justify-between flex-wrap gap-y-6 my-8">
                         <div className="w-1/2 pr-6 h-12 relative">
-                            {' '}
+
                             <input
                                 {...register('name', { required: true })}
                                 placeholder="Имя"

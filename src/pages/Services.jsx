@@ -16,13 +16,13 @@ const Services = () => {
                         <Record title="семейное право" image="https://images.unsplash.com/photo-1506836467174-27f1042aa48c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
                         <Record title="наследственное право" image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" />
                         <Record title="жилищное право" image="https://images.unsplash.com/photo-1619542402915-dcaf30e4e2a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" />
-                        <Record title="споры с банками" image="https://media2.malaymail.com/uploads/articles/2014-04/visa_mastercard.png" />
+                        <Record title="споры с банками" image="https://images.freeimages.com/images/large-previews/f94/credit-cards-1411613.jpg" />
                         <Record title="споры со страховыми и кредитными организациями" image="https://obrazovaka.ru/wp-content/uploads/2018/07/nalogovoe-pravo-e1530494918344.jpg" />
                         <Record title="защита авторских прав" image="https://images.unsplash.com/photo-1541753866388-0b3c701627d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
-                        <Record title="судебное установление фактов" image="https://images.unsplash.com/photo-1555374018-13a8994ab246?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=715&q=80" />
-                        <Record title="сопровождение сделок" image="https://www.viqu.co.uk/wp-content/uploads/2015/09/38826275042_abcea30792_b.jpg" />
-                        <Record title="защита прав потребителей" image="https://obrazovaka.ru/wp-content/uploads/2018/07/nalogovoe-pravo-e1530494918344.jpg" />
-                        <Record title="возмещение вреда здоровью" image="https://obrazovaka.ru/wp-content/uploads/2018/07/nalogovoe-pravo-e1530494918344.jpg" />
+                        <Record title="судебное установление фактов" image="https://images.freeimages.com/variants/QuuC9UEPkX1XXr86bipUSZKZ/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d" />
+                        <Record title="сопровождение сделок" image="https://images.freeimages.com/variants/FVn9Dhjn2zgftnfG3BbG6Dvd/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d" />
+                        <Record title="защита прав потребителей" image="https://images.freeimages.com/variants/SBjon3NemmLF68cMF7nqHrag/f4a36f6589a0e50e702740b15352bc00e4bfaf6f58bd4db850e167794d05993d" />
+                        <Record title="возмещение вреда здоровью" image="https://images.freeimages.com/images/large-previews/910/stethoscope-6-1533096.jpg" />
                         <Record title="земельное право и недвижимость" image="https://obrazovaka.ru/wp-content/uploads/2018/07/nalogovoe-pravo-e1530494918344.jpg" />
                         <Record title="банкротство" image="https://obrazovaka.ru/wp-content/uploads/2018/07/nalogovoe-pravo-e1530494918344.jpg" />
                         <Record title="авто право" image="https://obrazovaka.ru/wp-content/uploads/2018/07/nalogovoe-pravo-e1530494918344.jpg" />

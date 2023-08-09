@@ -15,7 +15,7 @@ const Contacts = () => {
                 </h1>
                 <h6 className=" text-lg text-gray-500  text-center mt-8 w-6/12 max-md:w-full">
                     Для связи с нами используйте представленные ниже номер телефона или контакную форму, либо
-                    напишите нам на почту test@test.com
+                    напишите нам на почту u2151066@mail.ru
                 </h6>
                 <div className=" w-full flex justify-center my-16">
                     <ul className="w-8/12 flex justify-between gap-8 max-lg:w-full max-md:flex-col">
@@ -26,7 +26,7 @@ const Contacts = () => {
                             </div>
                         </li>
                         <li>
-                            <div className="flex flex-col items-center">
+                            <div className="flex flex-col items-center" >
                                 <img src={locationIcon} alt="" className='h-16' />
                                 <ul className="mt-4 text-gray-500 text-center">
                                     <li>Рабочие дни:</li>
@@ -42,7 +42,7 @@ const Contacts = () => {
                                 <img src={contactIcon} alt="" className='h-16' />
                                 <div>Тел: 7-933-335-10-66</div>
                                 <ul className="mt-4 text-gray-500 flex justify-center  gap-4">
-                                    <li><img src={vkIcon} alt="VK" className='w-6' /></li>
+                                    <li><a href="https://vk.com/u2151066"><img src={vkIcon} alt="VK" className='w-6' /></a></li>
                                     <li><img src={instaIcon} alt="instagram" className='w-6' /></li>
                                     <li><img src={waIcon} alt="Whatsapp" className='w-6' /></li>
                                 </ul>

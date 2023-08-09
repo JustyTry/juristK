@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import ContactForm from '../components/ContactForm';
 import Record from '../components/Record';
-
+import FamilylawImage from '/images/familylaw.jpg'
+import RealestateImage from '/images/realestate.jpg'
+import CivillawImage from '/images/civillaw.jpg'
 const Home = () => {
     return (
         <div className="w-full bg-light">
@@ -87,12 +89,12 @@ const Home = () => {
                             link="labor"
                         />
                         <Record
-                            image="https://www.advgazeta.ru/upload/iblock/1db/semeynoe_pravo_vzglyad_tsivilista_1.jpg"
+                            image={FamilylawImage}
                             title="Семейное право"
                             link="family"
                         />
                         <Record
-                            image="https://prs.company/wp-content/uploads/2020/05/gr_pr.jpg"
+                            image={CivillawImage}
                             title="Гражданское право"
                             link="citizen"
                         />
@@ -102,7 +104,7 @@ const Home = () => {
                             link="arbitration"
                         />
                         <Record
-                            image="https://s0.rbk.ru/v6_top_pics/media/img/8/26/756358979194268.jpg"
+                            image={RealestateImage}
                             title="Недвижимость"
                             link="realestate"
                         />

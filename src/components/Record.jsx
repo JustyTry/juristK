@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 
 const Record = (data) => {
-
     return (
-        <div className="w-30% h-64 max-md:w-2/5 max-sm:w-full overflow-hidden ">
-            <Link to={`/service/${data.link}`}>
+
+        <div className="w-30% h-64 max-md:w-2/5 max-sm:w-full overflow-hidden max-sm:px-6">
+            <Link to={`/service/${data.type}/${data.link}`}>
                 <img
                     src={data.image}
                     alt={data.title}

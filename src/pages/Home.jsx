@@ -1,14 +1,17 @@
 import { Link } from 'react-router-dom';
-import ContactForm from '../components/ContactForm';
 import Record from '../components/Record';
-import FamilylawImage from '/images/familylaw.jpg'
-import RealestateImage from '/images/realestate.jpg'
-import CivillawImage from '/images/civillaw.jpg'
+
+import FamilylawImage from "/images/familylaw.png"
+import InheritancelawImage from "/images/inheritancelaw.png"
+import FactfindingImage from "/images/factfinding.png"
+import ContractlawImage from "/images/contractlaw.png"
+import CollectionImage from "/images/collection.png"
+import DocumentrecoveryImage from "/images/documentrecovery.png"
 const Home = () => {
     return (
         <div className="w-full bg-light">
-            <div className="w-full flex justify-center my-32 max-lg:my-24 max-md:my-8">
-                <ul className="w-8/12 max-lg:w-full flex justify-between text-darkblue text-center max-md:flex-col max-md:gap-8 ">
+            <div className="w-full flex justify-center max-md:my-8">
+                <ul className="w-8/12 max-xl:w-full my-16 max-md:my-4 flex justify-between text-darkblue text-center max-md:flex-col max-md:gap-8 ">
                     <li>
                         <div className="text-7xl">500+</div>
                         <div>Довольных клиентов</div>
@@ -28,13 +31,13 @@ const Home = () => {
                 </ul>
             </div>
             <div className="w-full  mt-8 flex justify-center mb-24 ">
-                <div className="w-8/12 max-lg:w-full relative">
+                <div className="w-8/12 max-xl:w-full relative">
                     <h2 className="flex text-7xl justify-between max-md:flex-col">
                         <div className="w-5/12 max-md:text-center max-md:w-full">
                             <span className=" text-darkblue mr-2">Кто </span>
                             <span className="text-beige ">мы</span>
                         </div>
-                        <p className=" text-base w-7/12 max-md:w-full pt-6 pl-8">
+                        <p className=" text-base w-7/12 max-md:w-full pt-6 px-8">
                             Добро пожаловать в фирму ЮристК, юридическую фирму созданную для защиты прав и
                             интересов наших клиентов
                         </p>
@@ -44,7 +47,7 @@ const Home = () => {
                             src="https://bogatyr.club/uploads/posts/2023-03/1677848619_bogatyr-club-p-femida-boginya-foni-instagram-15.png"
                             alt=""
                             loading="lazy"
-                            className="w-5/12 h-128 overflow-hidden object-cover object-right max-md:w-full"
+                            className="w-5/12 h-128 max-md:px-8 overflow-hidden object-cover object-right max-md:w-full"
                         />
                         <div className="flex flex-col w-7/12 max-md:w-full pl-8">
                             <div className="w-full flex ">
@@ -72,42 +75,19 @@ const Home = () => {
                 </div>
             </div>
             <div className="bg-darkblue w-full flex justify-center">
-                <div className=" w-8/12 max-lg:w-full">
+                <div className=" w-8/12 max-xl:w-full">
                     <h2 className="text-5xl font-light mb-6 mt-8 max-md:text-center">
                         <span className="text-white mr-2">Сферы </span>
                         <span className=" text-beige">услуг</span>
                     </h2>
                     <div className="w-full flex justify-between max-md:justify-around gap-y-12 max-sm:flex-col flex-wrap">
-                        <Record
-                            image="https://obrazovaka.ru/wp-content/uploads/2018/07/nalogovoe-pravo-e1530494918344.jpg"
-                            title="Налоговое право"
-                            link="tax"
-                        />
-                        <Record
-                            image="https://a7j7v6j6.rocketcdn.me/wp-content/uploads/2021/06/employment-law.jpg"
-                            title="Трудовое право"
-                            link="labor"
-                        />
-                        <Record
-                            image={FamilylawImage}
-                            title="Семейное право"
-                            link="family"
-                        />
-                        <Record
-                            image={CivillawImage}
-                            title="Гражданское право"
-                            link="citizen"
-                        />
-                        <Record
-                            image="https://myhouse777.ru/wp-content/uploads/2022/03/orig.jpg"
-                            title="Арбитраж"
-                            link="arbitration"
-                        />
-                        <Record
-                            image={RealestateImage}
-                            title="Недвижимость"
-                            link="realestate"
-                        />
+                        <Record title="семейное право" link="familylaw" image={FamilylawImage} />
+                        <Record title="наследственное право" link="inheritancelaw" image={InheritancelawImage} />
+                        <Record title="судебное установление фактов" link="factfinding" image={FactfindingImage} />
+                        <Record title="договорное право" image={ContractlawImage} />
+                        <Record title="взыскание долгов и убытков" image={CollectionImage} />
+                        <Record title="восстановление утраченных документов" image={DocumentrecoveryImage} />
+
                     </div>
 
                     <div className="w-full flex justify-center items-center mb-24 mt-8 ">
@@ -119,15 +99,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full bg-light flex justify-center">
-                <div className="w-8/12 mt-8 max-lg:w-full">
-                    <h2 className="text-7xl max-md:text-center">
-                        <span className="mr-2 text-darkblue">Напишите </span>
-                        <span className="text-beige">нам</span>
-                    </h2>
-                    <ContactForm />
-                </div>
-            </div>
+
         </div>
     );
 };

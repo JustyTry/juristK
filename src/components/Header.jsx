@@ -3,50 +3,73 @@ import BgImage from '/images/bg.jpeg';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { Link } from 'react-router-dom';
 import Menu from './Menu';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
-const Header = () => {
+const Header = ({ handleScrollToContactForm }) => {
     const [visible, setVisible] = useState(false)
+    const blockRef = useRef(null);
+
+    const handleClickOutside = (event) => {
+        if (blockRef.current && !blockRef.current.contains(event.target)) {
+            setVisible(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('click', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, []);
     return (
         <>
-            <div className={`hidden ${visible ? "max-md:block" : "max-md:hidden"}`}>
-                <Menu visible={visible} setVisible={setVisible} />
-            </div>
             <header className="w-full text-white flex flex-col items-center justify-center">
 
-                <div className='w-full flex justify-center bg-light text-darkblue bg-opacity-10'>
+                <div className={`md:hidden  ${visible ? "max-md:w-full" : "max-md:w-0"}`}>
+                    <Menu visible={visible} setVisible={setVisible} />
+                </div>
+                <div className='w-full flex justify-center bg-darkblue bg-opacity-10 absolute top-0'>
                     <div className="w-8/12 max-lg:w-full h-20 flex justify-around items-center max-md:justify-between ">
                         <Link to="/" className="h-full w-3/12 max-md:w-8/12">
-                            <img className="h-full py-3 max-md:ml-4" src={Logo} alt="Logo" />
+                            <img className="h-full py-3  max-md:scale-75 " src={Logo} alt="Logo" />
+
                         </Link>
                         <nav className="max-md:hidden w-6/12 flex justify-center">
                             <ul className="text-xl flex justify-between gap-10">
-                                <li className='flex flex-col relative after:h-px after:bg-darkblue after:w-0 hover:after:w-full after:transform after:duration-300'>
+                                <li className='flex flex-col relative after:h-px after:bg-white after:w-0 hover:after:w-full after:transform after:duration-300'>
                                     <Link to="/about" >Кто мы</Link>
 
                                 </li>
-                                <li className='flex flex-col relative after:h-px after:bg-darkblue after:w-0 hover:after:w-full after:transform after:duration-300'>
+                                <li className='flex flex-col relative after:h-px after:bg-white  after:w-0 hover:after:w-full after:transform after:duration-300'>
                                     <Link to="/services">Услуги</Link>
                                 </li>
-                                <li className='flex flex-col relative after:h-px after:bg-darkblue after:w-0 hover:after:w-full after:transform after:duration-300'>
+                                <li className='flex flex-col relative after:h-px after:bg-white  after:w-0 hover:after:w-full after:transform after:duration-300'>
                                     <Link to="/contacts">Контакты</Link>
                                 </li>
                             </ul>
                         </nav>
-                        <div className="max-md:hidden w-3/12 flex justify-end text-xl"><a href="tel:+7-933-335-10-66" className='w-fit flex flex-col relative after:h-px after:bg-darkblue after:w-0 hover:after:w-full after:transform after:duration-300'>+7-933-335-10-66</a></div>
-                        <div className="hidden max-md:block">
+                        <div className="max-md:hidden w-3/12 flex justify-end text-xl"><a href="tel:+7-933-335-10-66" className='w-fit flex flex-col relative after:h-px after:bg-white  after:w-0 hover:after:w-full after:transform after:duration-300'>+7-933-335-10-66</a></div>
+                        <div ref={blockRef} className="hidden max-md:block">
+
                             <RxHamburgerMenu className="w-5 h-5 mr-4" onClick={() => setVisible(!visible)} />
+
                         </div>
                     </div>
                 </div>
-                <div className="w-full">
+                <div className="w-full  brightness-75 -z-20">
                     <img
                         src={BgImage}
                         alt=""
-                        className="w-full select-none pointer-events-none object-cover object-right"
+                        className="w-full select-none pointer-events-none object-cover object-center min-h-[16rem] max-h-[48rem]"
                     />
-                </div>
 
+                </div>
+                <div className='absolute [font-size:_clamp(1rem,5vw,4em)] z-10 text-center w-full '>
+                    <h1 className='text-gray-100' >Первая консультация - бесплатно</h1>
+
+                    <button onClick={handleScrollToContactForm} ><h2 className='text-blue-300'>Свяжитесь с нами</h2></button>
+                </div>
             </header>
         </>
     );

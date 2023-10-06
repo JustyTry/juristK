@@ -9,14 +9,28 @@ import Footer from "./components/Footer";
 import Services from "./pages/Services";
 import AboutUs from "./pages/AboutUs";
 import Service from "./pages/Service";
+import ContactForm from "./components/ContactForm";
+import { useRef } from "react";
 
 
 function App() {
+
+  const formRef = useRef(null)
+  const handleScrollToContactForm = () => {
+    formRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
   const Layout = ({ Page }) => {
     return (
       <div className='flex flex-col h-screen justify-between font-lato'>
-        <Header />
+        <Header handleScrollToContactForm={handleScrollToContactForm} />
+
         <Page />
+        <div className="w-full bg-light flex justify-center">
+          <div className="w-8/12 mt-8 max-xl:w-full">
+
+            <ContactForm formRef={formRef} />
+          </div>
+        </div>
         <Footer />
       </div>
     )
@@ -35,7 +49,7 @@ function App() {
       element: <Layout Page={Services} />,
     },
     {
-      path: "/service/:name",
+      path: "/service/:type/:name",
       element: <Layout Page={Service} />,
     },
     {

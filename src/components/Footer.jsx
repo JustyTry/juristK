@@ -2,6 +2,8 @@ import VkIcon from '/images/vkIcon.png';
 import InstaIcon from '/images/instIcon.png';
 import WaIcon from '/images/waIcon.png';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
@@ -9,15 +11,15 @@ const Footer = () => {
             <h6 className=" pt-4 text-xl">Безвыходных ситуаций не бывает</h6>
             <div className=" flex justify-start gap-10">
                 <div className='flex flex-col items-center text-center'>
-                    <a href="https://vk.com/u2151066"><img src={VkIcon} alt="VK" /></a>
+                    <a href="https://vk.com/u2151066"><LazyLoadImage src={VkIcon} effect='blur' alt="VK" /></a>
                     <Link to="/about" className="w-full mt-2">Кто мы</Link>
                 </div>
                 <div className='flex flex-col items-center text-center'>
-                    <a href="https://instagram.com/u2151066"><img src={InstaIcon} alt="Insta" /></a>
+                    <a href="https://instagram.com/u2151066"><LazyLoadImage src={InstaIcon} effect='blur' alt="Insta" /></a>
                     <Link to="/services" className="w-full mt-2">Услуги</Link>
                 </div>
                 <div className='flex flex-col items-center text-center'>
-                    <a href="https://wa.me/+79333351066"><img src={WaIcon} alt="Insta" /></a>
+                    <a href="https://wa.me/+79333351066"><LazyLoadImage src={WaIcon} effect='blur' alt="Insta" /></a>
                     <Link to="/contacts" className="w-full mt-2">Контакты</Link>
                 </div>
             </div>

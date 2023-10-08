@@ -15,7 +15,7 @@ const Services = () => {
                         <span className="text-beige">лицам</span>
                     </h2>
 
-                    <div className="w-full flex justify-between after:content-[''] after:w-30% max-md:justify-around gap-y-12 max-sm:flex-col flex-wrap">
+                    <div className="w-full flex gap-y-12 max-sm:flex-col flex-wrap">
                         {individuals.map((item, index) => (
                             <Record key={index} {...item} type={"individuals"} />
                         ))}
@@ -45,18 +45,17 @@ const Services = () => {
                         <span className="text-beige">структурам</span>
                     </h2>
 
-                    <div className="w-full flex justify-between after:content-[''] after:w-30% max-md:justify-around gap-y-12 max-sm:flex-col flex-wrap">
+                    <div className="w-full flex  max-md:justify-around gap-y-12 max-sm:flex-col flex-wrap">
                         {organizationalstructures.map((item, index) => (
                             <Record key={index} {...item} type="organizationalstructures" />
                         ))}
                     </div>
                 </div>
-                {/* регистрация НОУ, АНО, регистрация АО, перерегистрация, ликвидация фирм, регистрация ООО, внесение изменений в документы, регистрация ИП, банкротство */}
+
             </div>
 
         </div>
 
-        //Регистрация и ликвидация предприятий:регистрация НОУ, АНО, регистрация АО, перерегистрация, ликвидация фирм, регистрация ООО, внесение изменений в документы, регистрация ИП, банкротство
     );
 };
 

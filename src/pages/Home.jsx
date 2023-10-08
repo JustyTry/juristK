@@ -1,30 +1,30 @@
 import { Link } from 'react-router-dom';
 import Record from '../components/Record';
 
-import FamilylawImage from "/images/familylaw.png"
-import InheritancelawImage from "/images/inheritancelaw.png"
-import FactfindingImage from "/images/factfinding.png"
-import ContractlawImage from "/images/contractlaw.png"
-import CollectionImage from "/images/collection.png"
-import DocumentrecoveryImage from "/images/documentrecovery.png"
+import FamilylawImage from "/images/familylaw.webp"
+import InheritancelawImage from "/images/inheritancelaw.webp"
+import FactfindingImage from "/images/factfinding.webp"
+import ContractlawImage from "/images/contractlaw.webp"
+import CollectionImage from "/images/collection.webp"
+import DocumentrecoveryImage from "/images/documentrecovery.webp"
 const Home = () => {
     return (
         <div className="w-full bg-light">
             <div className="w-full flex justify-center max-md:my-8">
-                <ul className="w-8/12 max-xl:w-full my-16 max-md:my-4 flex justify-between text-darkblue text-center max-md:flex-col max-md:gap-8 ">
-                    <li>
+                <ul className="w-8/12 max-xl:w-full my-16 max-md:my-4 flex justify-between text-darkblue text-center flex-wrap max-md:gap-y-8 ">
+                    <li className='max-md:w-1/2 max-sm:w-full'>
                         <div className="text-7xl">500+</div>
                         <div>Довольных клиентов</div>
                     </li>
-                    <li>
+                    <li className='max-md:w-1/2 max-sm:w-full'>
                         <div className="text-7xl  ">5+</div>
                         <div>Лет выслуги</div>
                     </li>
-                    <li>
+                    <li className='max-md:w-1/2 max-sm:w-full'>
                         <div className="text-7xl ">15+</div>
                         <div>Лет опыта сотрудников</div>
                     </li>
-                    <li>
+                    <li className='max-md:w-1/2 max-sm:w-full'>
                         <div className="text-7xl">1000+</div>
                         <div>Успешных дел</div>
                     </li>
@@ -47,7 +47,7 @@ const Home = () => {
                             src="https://bogatyr.club/uploads/posts/2023-03/1677848619_bogatyr-club-p-femida-boginya-foni-instagram-15.png"
                             alt=""
                             loading="lazy"
-                            className="w-5/12 h-128 max-md:px-8 overflow-hidden object-cover object-right max-md:w-full"
+                            className="w-5/12 h-128 max-sm:h-96 max-md:px-8 overflow-hidden object-cover object-right max-md:w-full"
                         />
                         <div className="flex flex-col w-7/12 max-md:w-full pl-8">
                             <div className="w-full flex ">
@@ -81,12 +81,12 @@ const Home = () => {
                         <span className=" text-beige">услуг</span>
                     </h2>
                     <div className="w-full flex justify-between max-md:justify-around gap-y-12 max-sm:flex-col flex-wrap">
-                        <Record title="семейное право" link="familylaw" image={FamilylawImage} />
-                        <Record title="наследственное право" link="inheritancelaw" image={InheritancelawImage} />
-                        <Record title="судебное установление фактов" link="factfinding" image={FactfindingImage} />
-                        <Record title="договорное право" image={ContractlawImage} />
-                        <Record title="взыскание долгов и убытков" image={CollectionImage} />
-                        <Record title="восстановление утраченных документов" image={DocumentrecoveryImage} />
+                        <Record title="семейное право" type="individuals" link="familylaw" image={FamilylawImage} />
+                        <Record title="наследственное право" type="individuals" link="inheritancelaw" image={InheritancelawImage} />
+                        <Record title="судебное установление фактов" type="individuals" link="factfinding" image={FactfindingImage} />
+                        <Record title="договорное право" type="legalentities" link="сontractlaw" image={ContractlawImage} />
+                        <Record title="взыскание долгов и убытков" type="legalentities" link="collection" image={CollectionImage} />
+                        <Record title="восстановление утраченных документов" type="legalentities" link="documentrecovery" image={DocumentrecoveryImage} />
 
                     </div>
 

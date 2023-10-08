@@ -21,7 +21,7 @@ function App() {
   };
   const Layout = ({ Page }) => {
     return (
-      <div className='flex flex-col h-screen justify-between font-lato'>
+      <div className='flex flex-col h-screen justify-between font-lato font-normal'>
         <Header handleScrollToContactForm={handleScrollToContactForm} />
 
         <Page />

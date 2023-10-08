@@ -1,9 +1,12 @@
 import { createTransport } from 'nodemailer';
 import express from 'express';
 import cors from 'cors'
+import 'dotenv/config'
+
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors());
+
 app.post('/send-email', (req, res) => {
     const formData = req.body;
 
@@ -12,16 +15,16 @@ app.post('/send-email', (req, res) => {
         port: 465,
         secure: true,
         auth: {
-            user: 'fallenn2@mail.ru',
-            pass: 'MpYBYTFii4b1VLpXjESQ'
+            user: process.env.USERMAIL,
+            pass: process.env.USERPASS
         }
     });
 
     const mailOptions = {
-        from: 'JuristK <fallenn2@mail.ru>',
-        to: 'amaslak.ru@mail.ru',
+        from: `JuristK <${process.env.USERMAIL}>`,
+        to: formData.email,
         subject: 'Пример отправки почты с помощью Nodemailer',
-        text: `Имя: ${formData.name}\nEmail: ${formData.email}\nСообщение: ${formData.message}`
+        text: `Имя: ${formData.name}\nФамилия: ${formData.fullname}\nEmail: ${formData.email}\nНомер: ${formData.number}\nСообщение: ${formData.description}`
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
@@ -33,6 +36,6 @@ app.post('/send-email', (req, res) => {
     });
 })
 
-app.listen(3000, () => {
-    console.log(`Example app listening on port 3000`)
+app.listen(process.env.PORT, () => {
+    console.log(`server is running on ${process.env.PORT}`)
 })

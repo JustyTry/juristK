@@ -39,8 +39,8 @@ const Contacts = () => {
                         <li>
                             <div className="flex flex-col items-center">
                                 <img src={contactIcon} alt="" className='h-16' />
-                                <div>Тел: 7-933-335-10-66</div>
-                                <ul className="mt-4 text-gray-500 flex justify-center  gap-4">
+                                <div className='mt-4'>Тел: 7-933-335-10-66</div>
+                                <ul className="mt-2 text-gray-500 flex justify-center  gap-4">
                                     <li><a href="https://vk.com/u2151066"><img src={vkIcon} alt="VK" className='w-6' /></a></li>
                                     <li><a href="https://instagram.com/u2151066"><img src={instaIcon} alt="instagram" className='w-6' /></a></li>
                                     <li><a href="https://wa.me/+79333351066"><img src={waIcon} alt="Whatsapp" className='w-6' /></a></li>

@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         'lato': ['EB Garamond', 'sans-serif']
       },
+      fontWeight: {
+        normal: 400,
+      },
       spacing: {
         '128': '32rem',
       },

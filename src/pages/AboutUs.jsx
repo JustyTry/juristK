@@ -2,8 +2,8 @@ const AboutUs = () => {
     return (
         <div className="w-full bg-light text-darkblue text-xl flex flex-col items-center">
 
-            <div className="w-8/12 text-left text-xl mb-16">
-                <p className="indent-8">Компания Юрист<span className=" text-blue-500 text-3xl">К</span> существует уже более трех лет и на
+            <div className="w-8/12 max-lg:w-full text-left text-xl my-8">
+                <p className="indent-8">Компания ЮристⓀ существует уже более трех лет и на
                     сегодняшний день имеет более сотни довольных клиентов. Наша компания основана двумя
                     высококвалифицированными специалистами, которые имеют более чем 15-летний опыт работы в
                     сфере юриспруденции.</p>

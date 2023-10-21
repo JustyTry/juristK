@@ -4,8 +4,12 @@ import locationIcon from '/images/locationIcon.png';
 import vkIcon from '/images/vkIcon.png'
 import instaIcon from '/images/instIcon.png'
 import waIcon from '/images/waIcon.png'
+import { useEffect } from 'react';
 
 const Contacts = () => {
+    useEffect(() => {
+        document.title = "Контакты";
+    });
     return (
         <div className=" bg-light ">
             <div className="w-full flex items-center flex-col ">

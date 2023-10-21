@@ -1,6 +1,5 @@
 import Logo from '/images/logo.png';
 import BgImage from '/images/bg.jpeg';
-import BgminImage from '/images/bg-min.jpeg';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { Link } from 'react-router-dom';
 import Menu from './Menu';
@@ -23,8 +22,7 @@ const Header = ({ handleScrollToContactForm }) => {
                 <div className='w-full flex justify-center bg-darkblue bg-opacity-10 absolute top-0'>
                     <div className="w-8/12 max-lg:w-full h-20 flex justify-around items-center max-md:justify-between ">
                         <Link to="/" className="h-full w-3/12 max-md:w-8/12">
-                            <LazyLoadImage visibleByDefault="true" className="py-3 max-md:scale-75 " width={"180px"} height={"auto"} src={Logo} effect="blur" alt="Logo" />
-
+                            <LazyLoadImage visibleByDefault="true" className="py-3 max-md:scale-75 " width={"180px"} height={"100px"} src={Logo} effect="blur" alt="Logo" />
                         </Link>
                         <nav className="max-md:hidden w-6/12 flex justify-center">
                             <ul className="text-xl flex justify-between gap-10">
@@ -46,14 +44,14 @@ const Header = ({ handleScrollToContactForm }) => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full  brightness-75 -z-20">
+                <div className="w-full min-h-[16rem] max-h-[48rem]  brightness-75 -z-20">
                     <LazyLoadImage
+                        visibleByDefault="true"
                         src={BgImage}
-                        placeholderSrc={BgminImage}
-                        effect="blur"
                         alt=""
                         width={"100%"}
-                        className="select-none pointer-events-none object-cover object-center min-h-[16rem] max-h-[48rem]"
+                        height={"100%"}
+                        className="select-none pointer-events-none object-cover object-center min-h-[16rem] max-h-[48rem] "
                     />
 
                 </div>

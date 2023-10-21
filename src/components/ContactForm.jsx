@@ -28,16 +28,6 @@ const ContactForm = ({ formRef }) => {
             },
             body: JSON.stringify(formData)
         })
-            .then(response => {
-                if (response.ok) {
-                    console.log('Письмо успешно отправлено');
-                } else {
-                    console.log('Ошибка при отправке письма');
-                }
-            })
-            .catch(error => {
-                console.log('Ошибка при отправке письма:', error);
-            });
         reset()
     };
 
@@ -136,9 +126,7 @@ const ContactForm = ({ formRef }) => {
                     <li><MdPhone className='inline mr-2' />+7-933-335-10-66</li>
                 </ul>
                 <div className="w-full">
-                    {/* <iframe
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A6529b819bb76ed533b5f0284c9b21b934b28507b3cde31c12fa0fdc5632af94e&amp;source=constructor"
-                        ></iframe> */} <YMaps> <Map defaultState={{ center: [56.01278755471133, 92.81413307970227], zoom: 19 }} className="w-full mt-5 h-96" ><Placemark geometry={[56.01278755471133, 92.81413307970227]} /></Map></YMaps>
+                    <YMaps> <Map defaultState={{ center: [56.01278755471133, 92.81413307970227], zoom: 19 }} className="w-full mt-5 h-96" ><Placemark geometry={[56.01278755471133, 92.81413307970227]} /></Map></YMaps>
                 </div>
             </div>
         </div>

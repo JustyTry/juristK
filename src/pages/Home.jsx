@@ -7,7 +7,16 @@ import FactfindingImage from "/images/factfinding.webp"
 import ContractlawImage from "/images/contractlaw.webp"
 import CollectionImage from "/images/collection.webp"
 import DocumentrecoveryImage from "/images/documentrecovery.webp"
+
+import HomeImage1 from "/images/home-1.png"
+import HomeImage2 from "/images/home-2.jpg"
+import HomeImage3 from "/images/home-3.jpg"
+import { useEffect } from 'react';
+
 const Home = () => {
+    useEffect(() => {
+        document.title = "Юрист К";
+    });
     return (
         <div className="w-full bg-light">
             <div className="w-full flex justify-center max-md:my-8">
@@ -33,7 +42,7 @@ const Home = () => {
             <div className="w-full  mt-8 flex justify-center mb-24 ">
                 <div className="w-8/12 max-xl:w-full relative">
                     <h2 className="flex text-7xl justify-between max-md:flex-col">
-                        <div className="w-5/12 max-md:text-center max-md:w-full">
+                        <div className="w-5/12 px-8 max-md:text-center max-md:w-full">
                             <span className=" text-darkblue mr-2">Кто </span>
                             <span className="text-beige ">мы</span>
                         </div>
@@ -42,23 +51,23 @@ const Home = () => {
                             интересов наших клиентов
                         </p>
                     </h2>
-                    <div className="mt-8 flex justify-between max-md:flex-col overflow-hidden ">
+                    <div className="mt-8 px-8 flex justify-between max-md:flex-col overflow-hidden ">
                         <img
-                            src="https://bogatyr.club/uploads/posts/2023-03/1677848619_bogatyr-club-p-femida-boginya-foni-instagram-15.png"
+                            src={HomeImage1}
                             alt=""
                             loading="lazy"
-                            className="w-5/12 h-128 max-sm:h-96 max-md:px-8 overflow-hidden object-cover object-right max-md:w-full"
+                            className="w-5/12 h-128 max-sm:h-96  overflow-hidden object-cover object-right max-md:w-full"
                         />
-                        <div className="flex flex-col w-7/12 max-md:w-full pl-8">
+                        <div className="flex flex-col w-7/12 max-md:w-full pl-8 max-md:pl-0">
                             <div className="w-full flex ">
                                 <img
-                                    src="https://media-cdn.tripadvisor.com/media/photo-s/0e/94/ef/d1/caption.jpg"
+                                    src={HomeImage2}
                                     alt=""
                                     loading="lazy"
                                     className="w-1/2 h-64 overflow-hidden object-cover object-center max-md:hidden"
                                 />
                                 <img
-                                    src="https://media.istockphoto.com/id/910852368/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA-%D0%BA%D0%BD%D0%B8%D0%B3.jpg?s=612x612&w=0&k=20&c=qih28uJoLA_IWIdW1uVVIXQ2kQlNyJGh5qbH9FvvBhc="
+                                    src={HomeImage3}
                                     alt=""
                                     loading="lazy"
                                     className="w-1/2 h-64 overflow-hidden object-cover object-center ml-8 max-md:hidden"
@@ -76,7 +85,7 @@ const Home = () => {
             </div>
             <div className="bg-darkblue w-full flex justify-center">
                 <div className=" w-8/12 max-xl:w-full">
-                    <h2 className="text-5xl font-light mb-6 mt-8 max-md:text-center">
+                    <h2 className="text-5xl font-light mb-6 mt-8 px-8  max-md:text-center">
                         <span className="text-white mr-2">Сферы </span>
                         <span className=" text-beige">услуг</span>
                     </h2>

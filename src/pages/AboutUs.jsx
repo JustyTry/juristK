@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const AboutUs = () => {
+    useEffect(() => {
+        document.title = "Кто мы";
+    });
     return (
         <div className="w-full bg-light text-darkblue text-xl flex flex-col items-center">
 

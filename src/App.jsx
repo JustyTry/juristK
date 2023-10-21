@@ -1,7 +1,7 @@
 import Header from "./components/Header"
 import {
   createBrowserRouter,
-  RouterProvider,
+  RouterProvider, Navigate
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Contacts from "./pages/Contacts";
@@ -11,7 +11,6 @@ import AboutUs from "./pages/AboutUs";
 import Service from "./pages/Service";
 import ContactForm from "./components/ContactForm";
 import { useRef } from "react";
-
 
 function App() {
 
@@ -39,6 +38,7 @@ function App() {
     {
       path: "/",
       element: <Layout Page={Home} />,
+      errorElement: <Navigate to="/" replace />,
     },
     {
       path: "/about",

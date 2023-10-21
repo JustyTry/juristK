@@ -1,8 +1,11 @@
 import Record from "../components/Record";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import services from "../services.json"
 const Services = () => {
+    useEffect(() => {
+        document.title = "Услуги";
+    });
     const [individuals] = useState(Object.values(services["individuals"]));
     const [legalentities] = useState(Object.values(services["legalentities"]))
     const [organizationalstructures] = useState(Object.values(services["organizationalstructures"]))

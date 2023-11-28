@@ -53,7 +53,7 @@ const AboutUs = () => {
         </h2>
         <div className="my-8 flex w-full gap-x-6 max-md:flex-col max-md:items-center">
           <div className="overflow-hidden rounded-full">
-            <LazyLoadImage src="https://www.telegraph.co.uk/multimedia/archive/03249/archetypal-female-_3249633c.jpg?imwidth=680" />
+            <LazyLoadImage src="https://www.telegraph.co.uk/multimedia/archive/03249/archetypal-female-_3249633c.jpg?imwidth=680" className="max-h-80" alt="Светлана" />
           </div>
           <div className="flex w-full flex-col justify-center max-md:items-center max-md:text-center">
             <h2 className="text-4xl text-beige">Светлана</h2>
@@ -74,7 +74,7 @@ const AboutUs = () => {
             </span>
           </div>
           <div className="overflow-hidden rounded-full">
-            <LazyLoadImage src="https://www.telegraph.co.uk/multimedia/archive/03249/archetypal-male-fa_3249635c.jpg" />
+            <LazyLoadImage src="https://www.telegraph.co.uk/multimedia/archive/03249/archetypal-male-fa_3249635c.jpg" className="max-h-80" alt="Иван" />
           </div>
         </div>
       </div>

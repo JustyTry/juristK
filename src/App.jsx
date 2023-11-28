@@ -1,7 +1,8 @@
-import Header from "./components/Header"
+import Header from "./components/Header";
 import {
   createBrowserRouter,
-  RouterProvider, Navigate
+  RouterProvider,
+  Navigate,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Contacts from "./pages/Contacts";
@@ -13,27 +14,25 @@ import ContactForm from "./components/ContactForm";
 import { useRef } from "react";
 
 function App() {
-
-  const formRef = useRef(null)
+  const formRef = useRef(null);
   const handleScrollToContactForm = () => {
-    formRef.current?.scrollIntoView({ behavior: 'smooth' });
+    formRef.current?.scrollIntoView({ behavior: "smooth" });
   };
   const Layout = ({ Page }) => {
     return (
-      <div className='flex flex-col h-screen justify-between font-lato font-normal'>
+      <div className="flex h-screen flex-col justify-between font-lato font-normal">
         <Header handleScrollToContactForm={handleScrollToContactForm} />
 
         <Page />
-        <div className="w-full bg-light flex justify-center">
-          <div className="w-8/12 mt-8 max-xl:w-full">
-
+        <div className="flex w-full justify-center bg-light">
+          <div className="mt-8 w-8/12 max-xl:w-full">
             <ContactForm formRef={formRef} />
           </div>
         </div>
         <Footer />
       </div>
-    )
-  }
+    );
+  };
   const router = createBrowserRouter([
     {
       path: "/",
@@ -62,7 +61,7 @@ function App() {
     <div className="text-lato">
       <RouterProvider router={router} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

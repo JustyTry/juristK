@@ -52,29 +52,48 @@ const AboutUs = () => {
           <span className="text-beige">специалисты</span>
         </h2>
         <div className="my-8 flex w-full gap-x-6 max-md:flex-col max-md:items-center">
-          <div className="overflow-hidden rounded-full">
-            <LazyLoadImage src="https://www.telegraph.co.uk/multimedia/archive/03249/archetypal-female-_3249633c.jpg?imwidth=680" className="max-h-80" alt="Светлана" />
+          <div className="h-60 w-60 overflow-hidden rounded-full">
+            <LazyLoadImage
+              src="https://www.telegraph.co.uk/multimedia/archive/03249/archetypal-female-_3249633c.jpg?imwidth=680"
+              className="h-full w-60 object-cover object-top"
+              width={240}
+              height={240}
+              alt="Иван"
+            />
           </div>
           <div className="flex w-full flex-col justify-center max-md:items-center max-md:text-center">
-            <h2 className="text-4xl text-beige">Светлана</h2>
+            <h2 className="text-4xl text-beige">Иван</h2>
             <span className="text-lg">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              vero, necessitatibus exercitationem soluta aut deserunt eaque
-              numquam iste sint nihil molestiae{" "}
+              Иван - талантливый и преданный своей профессии юрист. Он обладает
+              глубокими знаниями в различных областях права и имеет значительный
+              опыт работы. Иван проявляет высокую ответственность и
+              внимательность к деталям, что позволяет ему эффективно разрешать
+              правовые вопросы своих клиентов. Он обладает отличными навыками
+              коммуникации и способностью находить компромиссы, что позволяет
+              ему успешно представлять интересы своих клиентов.
             </span>
           </div>
         </div>
         <div className="my-8 flex w-full gap-x-6 max-md:flex-col-reverse max-md:items-center">
           <div className="flex w-full flex-col justify-center text-right max-md:items-center max-md:text-center">
-            <h2 className="text-4xl text-beige">Иван</h2>
+            <h2 className="text-4xl text-beige">Светлана</h2>
             <span className="text-lg">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              vero, necessitatibus exercitationem soluta aut deserunt eaque
-              numquam iste sint nihil molestiae
+              Светлана - опытный и компетентный юрист с глубокими знаниями в
+              различных областях права. Она обладает высоким профессионализмом и
+              стремится предоставить своим клиентам качественные юридические
+              услуги. Светлана отличается внимательным и индивидуальным подходом
+              к каждому клиенту, помогая им разрешать правовые вопросы и
+              достигать своих целей.
             </span>
           </div>
-          <div className="overflow-hidden rounded-full">
-            <LazyLoadImage src="https://www.telegraph.co.uk/multimedia/archive/03249/archetypal-male-fa_3249635c.jpg" className="max-h-80" alt="Иван" />
+          <div className="h-60 w-60 overflow-hidden rounded-full">
+            <LazyLoadImage
+              src={"../public/images/face1.jpg"}
+              className="h-full w-60 object-cover object-top"
+              width={240}
+              height={240}
+              alt="Светлана"
+            />
           </div>
         </div>
       </div>

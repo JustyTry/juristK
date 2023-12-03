@@ -13,6 +13,11 @@ const Header = ({ handleScrollToContactForm }) => {
   return (
     <>
       <header className="flex  w-full flex-col items-center justify-center text-white">
+        <div
+          className={`md:hidden ${visible ? "max-md:w-full" : "max-md:w-0"}`}
+        >
+          <Menu visible={visible} setVisible={setVisible} />
+        </div>
         <div className="-z-20 max-h-[48rem] min-h-[16rem]  w-full brightness-75">
           <LazyLoadImage
             visibleByDefault="true"
@@ -23,18 +28,14 @@ const Header = ({ handleScrollToContactForm }) => {
             className="pointer-events-none h-full select-none object-cover object-center"
           />
         </div>
+
         <div className="absolute z-10 w-full text-center [font-size:_clamp(1.5rem,5vw,4em)] ">
           <h1 className="text-gray-100">Первая консультация - бесплатно</h1>
-
           <button onClick={handleScrollToContactForm}>
             <h2 className="text-blue-300">Свяжитесь с нами</h2>
           </button>
         </div>
-        <div
-          className={`md:hidden ${visible ? "max-md:w-full" : "max-md:w-0"}`}
-        >
-          <Menu visible={visible} setVisible={setVisible} />
-        </div>
+
         <div className="absolute top-0 flex w-full justify-center bg-darkblue bg-opacity-10">
           <div className="flex h-20 w-8/12 items-center justify-around max-lg:w-full max-md:justify-between ">
             <Link to="/" className="h-full w-3/12 max-md:w-8/12">

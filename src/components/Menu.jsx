@@ -11,7 +11,7 @@ const Menu = ({ visible, setVisible }) => {
   }, [visible]);
   return (
     <div
-      className={`fixed right-0 z-40 w-full overflow-hidden whitespace-nowrap bg-darkblue text-white ${
+      className={`fixed  right-0 z-40 w-full overflow-hidden whitespace-nowrap bg-darkblue text-white ${
         visible
           ? "transition-width h-full duration-500 ease-in-out"
           : "transition-width h-0 duration-500 ease-in-out "

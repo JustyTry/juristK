@@ -47,7 +47,7 @@ const AboutUs = () => {
         </p>
       </div>
       <div className="my-8 w-8/12 text-xl max-lg:w-full">
-        <h2 className="h-16 text-center  [font-size:_clamp(2.6rem,5vw,4em)] max-md:text-center">
+        <h2 className="h-16 text-center  [font-size:_clamp(2.5rem,5vw,4em)] max-md:text-center">
           <span className="mr-2 text-darkblue">Наши </span>
           <span className="text-beige">специалисты</span>
         </h2>
